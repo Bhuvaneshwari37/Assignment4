@@ -17,7 +17,8 @@ The project covers the complete pipeline: **data preprocessing, model training, 
 - Usage  
 - Class Names  
 - Visualizations  
-- License  
+- License
+  
 📌 Project Overview
 The objective of this project is to **classify fish species using deep learning** and compare the performance of a **custom CNN** against **state-of-the-art pretrained models**.
 
@@ -87,8 +88,8 @@ test/ – Testing data
 Each folder contains subdirectories representing individual fish classes.
 
 📁 Directory Structure
-bash
-Copy code
+
+
 Dataset/
 ├── train/
 │   ├── class1/
@@ -99,6 +100,9 @@ Dataset/
 ├── test/
 │   ├── class1/
 │   ├── class2/
+
+
+
 🔄 Preprocessing
 The following preprocessing techniques are applied:
 
@@ -155,21 +159,23 @@ Evaluation was performed on the test dataset using:
 
 🏆 Results
 🔍 Model Performance Comparison
-Model	Accuracy	Precision	Recall	F1 Score
-VGG16	85.5%	84.0%	85.0%	84.5%
-ResNet50	87.2%	86.5%	87.0%	86.7%
-MobileNet	89.0%	88.0%	89.2%	88.6%
-InceptionV3	90.3%	89.5%	90.0%	89.7%
-EfficientNetB0	91.1%	90.5%	91.2%	90.9%
+| Model          | Accuracy  | Precision | Recall    | F1 Score  |
+| -------------- | --------- | --------- | --------- | --------- |
+| VGG16          | 85.5%     | 84.0%     | 85.0%     | 84.5%     |
+| ResNet50       | 87.2%     | 86.5%     | 87.0%     | 86.7%     |
+| MobileNet      | 89.0%     | 88.0%     | 89.2%     | 88.6%     |
+| InceptionV3    | 90.3%     | 89.5%     | 90.0%     | 89.7%     |
+| EfficientNetB0 | **91.1%** | **90.5%** | **91.2%** | **90.9%** |
+
 
 ✔ EfficientNetB0 achieved the best overall performance.
 
 🚀 Usage
 Run the Streamlit application locally or in Google Colab:
 
-bash
-Copy code
 streamlit run /content/app.py &>/content/logs.txt & npx localtunnel --port 8501
+
+
 🐠 Class Names
 The 11 fish species used for classification are:
 •	animal fish
